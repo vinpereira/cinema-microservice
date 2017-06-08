@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/vinpereira/cinema-microservice/issues"
   },
-  "homepage": "https://github.com/vinpereira/cinema-microservice#readme"
+  "homepage": "https://github.com/vinpereira/cinema-microservice#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "helmet": "^3.6.1",
+    "morgan": "^1.8.2"
+  }
 }
