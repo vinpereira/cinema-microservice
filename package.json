@@ -1,0 +1,19 @@
+{
+  "name": "movies-service",
+  "version": "0.0.1",
+  "description": "a movies microservice using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinpereira/cinema-microservice.git"
+  },
+  "author": "Vinícius Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinpereira/cinema-microservice/issues"
+  },
+  "homepage": "https://github.com/vinpereira/cinema-microservice#readme"
+}
