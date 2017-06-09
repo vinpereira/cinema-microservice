@@ -3,8 +3,17 @@
   "version": "0.0.1",
   "description": "a movies microservice using nodejs",
   "main": "index.js",
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": [
+      "mock"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec src/**/*.spec.js",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +29,14 @@
     "express": "^4.15.3",
     "helmet": "^3.6.1",
     "http-status": "^1.0.1",
+    "mongodb": "^2.2.28",
     "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "mocha": "^3.4.2",
+    "should": "^11.2.1",
+    "standard": "^10.0.2",
+    "supertest": "^3.0.0"
   }
 }
