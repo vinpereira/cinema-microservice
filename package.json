@@ -2,7 +2,7 @@
   "name": "movies-service",
   "version": "0.0.1",
   "description": "a movies microservice using nodejs",
-  "main": "index.js",
+  "main": "src/index.js",
   "standard": {
     "env": [
       "mocha"
