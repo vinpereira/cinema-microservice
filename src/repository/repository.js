@@ -36,8 +36,8 @@ const repository = (db) => {
                     $lte: currentDay.getFullYear()
                 },
                 releaseMonth: {
-                    $gte: currentDay.getMonth() + 1,
-                    $lte: currentDay.getMonth() + 2
+                    $gte: 1,
+                    $lte: currentDay.getMonth() + 1
                 },
                 releaseDay: {
                     $lte: currentDay.getDate()
@@ -82,7 +82,7 @@ const repository = (db) => {
 
     return Object.create({
         getAllMovies,
-        getMoviePremiers,
+        getMoviesPremiers,
         getMovieById,
         disconnect
     })
