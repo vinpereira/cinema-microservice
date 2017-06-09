@@ -31,7 +31,7 @@ describe('Movies API', () => {
     getAllMovies () {
       return Promise.resolve(testMovies)
     },
-    getMoviePremiers () {
+    getMoviesPremiers () {
       return Promise.resolve(testMovies.filter(movie => movie.releaseYear === 2017))
     },
     getMovieById (id) {
@@ -69,10 +69,11 @@ describe('Movies API', () => {
       .expect(200, done)
   })
 
-  it('can get movie premiers', (done) => {
+  it('can get movies premiers', (done) => {
     request(app)
-    .get('/movies/premiers')
+    .get('/movies/premieres')
     .expect((res) => {
+      // console.log(res)
       res.body.should.containEql({
         'id': '1',
         'title': 'Assasins Creed',

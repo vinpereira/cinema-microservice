@@ -14,7 +14,7 @@ module.exports = (app, options) => {
     })
 
     app.get('/movies/premieres', (req, res, next) => {
-        repo.getMoviePremiers()
+        repo.getMoviesPremiers()
             .then(movies => {
                 res.status(status.OK).json(movies)
             })
