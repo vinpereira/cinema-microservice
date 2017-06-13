@@ -1,1 +1,1 @@
-# Movies Microservice using Nodejs
+# Cinema Microservice using Nodejs
