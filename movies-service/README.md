@@ -47,9 +47,14 @@ $ npm start
 
 ##### With Docker
 - Set connection at movies-service/src/config/mongo.js to the right one (Docker is default)
-- Start MongoDB container and put some data on it (src/mocks/movies.js has some examples)
+- Start MongoDB container
 ```sh
 $ docker run --name my-mongo -p 27017:27017 -d mongo
+```
+- Put some data in MongoDB container
+```sh
+$ docker cp movies-service/src/mock/movies.json my-mongo:/tmp
+$ docker exec my-mongo bash -c 'mongo import --db movies --collection movies --file /tmp/movies.json'
 ```
 - Build Movies Service as a Docker container (at movies-service root folder -- Dockerfile location)
 ```sh
