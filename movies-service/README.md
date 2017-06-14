@@ -62,6 +62,6 @@ $ docker build -t movies-service .
 ```
 - Run Movies Service container
 ```sh
-$ docker run --name movie-service -p 3000:3000 --link my-mongo:my-mongo -d movies-service
+$ docker run --name movies-service -p 3000:3000 --link my-mongo:mongo -d movies-service
 ```
 - Go to localhost:3000 and access Movies Services API
