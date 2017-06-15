@@ -1,4 +1,4 @@
-{"_id":{"$oid":"594148b1f3ddb25ad0f390a5"},"id":"1","title":"Assasin's Creed","runtime":115.0,"format":"IMAX","plot":"Lorem ipsum dolor sit amet","releaseYear":2017.0,"releaseMonth":1.0,"releaseDay":6.0}
+{"_id":{"$oid":"594148b1f3ddb25ad0f390a5"},"id":"1","title":"Assassin's Creed","runtime":115.0,"format":"IMAX","plot":"Lorem ipsum dolor sit amet","releaseYear":2017.0,"releaseMonth":1.0,"releaseDay":6.0}
 {"_id":{"$oid":"594148b1f3ddb25ad0f390a6"},"id":"2","title":"Aliados","runtime":124.0,"format":"IMAX","plot":"Lorem ipsum dolor sit amet","releaseYear":2017.0,"releaseMonth":1.0,"releaseDay":13.0}
 {"_id":{"$oid":"594148b1f3ddb25ad0f390a7"},"id":"3","title":"xXx: Reativado","runtime":107.0,"format":"IMAX","plot":"Lorem ipsum dolor sit amet","releaseYear":2017.0,"releaseMonth":1.0,"releaseDay":20.0}
 {"_id":{"$oid":"594148b1f3ddb25ad0f390a8"},"id":"4","title":"Resident Evil: Capítulo Final","runtime":107.0,"format":"IMAX","plot":"Lorem ipsum dolor sit amet","releaseYear":2017.0,"releaseMonth":1.0,"releaseDay":27.0}
