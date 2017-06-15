@@ -51,10 +51,12 @@ $ npm start
 ```sh
 $ docker run --name my-mongo -p 27017:27017 -d mongo
 ```
+
+From 'movies-service' folder:
 - Put some data in MongoDB container
 ```sh
-$ docker cp movies-service/src/mock/movies.json my-mongo:/tmp
-$ docker exec my-mongo bash -c 'mongo import --db movies --collection movies --file /tmp/movies.json'
+$ docker cp src/mock/movies.json my-mongo:/tmp
+$ docker exec my-mongo bash -c 'mongoimport --db movies --collection movies --file /tmp/movies.json'
 ```
 - Build Movies Service as a Docker container (at movies-service root folder -- Dockerfile location)
 ```sh
@@ -62,6 +64,6 @@ $ docker build -t movies-service .
 ```
 - Run Movies Service container
 ```sh
-$ docker run --name movie-service -p 3000:3000 --link my-mongo:my-mongo -d movies-service
+$ docker run --name movies-service -p 3000:3000 --link my-mongo:mongo -d movies-service
 ```
 - Go to localhost:3000 and access Movies Services API
